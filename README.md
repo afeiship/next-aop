@@ -33,7 +33,7 @@ console.log('---abc---');
 // =--after--=
 ```
 
-## copyright & license
+## license
 > Code released under [the MIT license](https://github.com/afeiship/next-aop/blob/master/LICENSE.txt).
 
 [npm-image]: https://img.shields.io/npm/v/@feizheng/next-aop
