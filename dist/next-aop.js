@@ -2,10 +2,11 @@
  * name: @feizheng/next-aop
  * description: Aop for next.
  * homepage: https://github.com/afeiship/next-aop
- * version: 1.0.0
- * date: 2020-06-19T10:41:57.531Z
+ * version: 1.0.1
+ * date: 2020-06-21T02:23:48.412Z
  * license: MIT
  */
+
 
 (function () {
   var global = global || this || window || Function('return this')();
@@ -18,7 +19,7 @@
     return function () {
       var args = nx.slice(arguments);
       var ctx = options.context;
-      var targetArgs = [ inCallback ].concat(args);
+      var targetArgs = [inCallback].concat(args);
       var res;
       options.before.apply(ctx, targetArgs)
       res = inCallback.apply(ctx, args);

@@ -1,3 +1,4 @@
+
 (function () {
   var global = global || this || window || Function('return this')();
   var nx = global.nx || require('@feizheng/next-js-core2');
@@ -9,7 +10,7 @@
     return function () {
       var args = nx.slice(arguments);
       var ctx = options.context;
-      var targetArgs = [ inCallback ].concat(args);
+      var targetArgs = [inCallback].concat(args);
       var res;
       options.before.apply(ctx, targetArgs)
       res = inCallback.apply(ctx, args);
