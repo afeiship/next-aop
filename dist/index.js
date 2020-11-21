@@ -1,16 +1,15 @@
 /*!
- * name: @feizheng/next-aop
+ * name: @jswork/next-aop
  * description: Aop for next.
  * homepage: https://github.com/afeiship/next-aop
- * version: 1.0.1
- * date: 2020-06-21T02:23:48.412Z
+ * version: 1.0.0
+ * date: 2020-11-21 09:15:02
  * license: MIT
  */
 
-
 (function () {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('@feizheng/next-js-core2');
+  var nx = global.nx || require('@jswork/next');
   var DEFAULT_OPTIONS = { context: global, before: nx.noop, after: nx.noop };
 
   nx.aop = function (inCallback, inOptions) {
@@ -21,16 +20,14 @@
       var ctx = options.context;
       var targetArgs = [inCallback].concat(args);
       var res;
-      options.before.apply(ctx, targetArgs)
+      options.before.apply(ctx, targetArgs);
       res = inCallback.apply(ctx, args);
       options.after.apply(ctx, targetArgs);
       return res;
-    }
+    };
   };
 
   if (typeof module !== 'undefined' && module.exports) {
     module.exports = nx.aop;
   }
 })();
-
-//# sourceMappingURL=next-aop.js.map

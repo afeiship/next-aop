@@ -1,7 +1,6 @@
-
 (function () {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('@feizheng/next-js-core2');
+  var nx = global.nx || require('@jswork/next');
   var DEFAULT_OPTIONS = { context: global, before: nx.noop, after: nx.noop };
 
   nx.aop = function (inCallback, inOptions) {
@@ -12,11 +11,11 @@
       var ctx = options.context;
       var targetArgs = [inCallback].concat(args);
       var res;
-      options.before.apply(ctx, targetArgs)
+      options.before.apply(ctx, targetArgs);
       res = inCallback.apply(ctx, args);
       options.after.apply(ctx, targetArgs);
       return res;
-    }
+    };
   };
 
   if (typeof module !== 'undefined' && module.exports) {

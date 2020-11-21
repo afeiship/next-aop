@@ -1,20 +1,19 @@
 # next-aop
 > Aop for next.
 
-[![npm][npm-image]][npm-url]
-![NPM](https://img.shields.io/npm/l/@feizheng/next-aop)
-![npm bundle size](https://img.shields.io/bundlephobia/minzip/@feizheng/next-aop)
-![npm](https://img.shields.io/npm/dw/@feizheng/next-aop)
-
+[![version][version-image]][version-url]
+[![license][license-image]][license-url]
+[![size][size-image]][size-url]
+[![download][download-image]][download-url]
 
 ## installation
 ```bash
-npm install -S @feizheng/next-aop
+npm install -S @jswork/next-aop
 ```
 
 ## usage
 ```js
-import '@feizheng/next-aop';
+import '@jswork/next-aop';
 
 console.log = nx.aop(console.log, {
   before: function (oldConsole) {
@@ -34,7 +33,16 @@ console.log('---abc---');
 ```
 
 ## license
-> Code released under [the MIT license](https://github.com/afeiship/next-aop/blob/master/LICENSE.txt).
+Code released under [the MIT license](https://github.com/afeiship/next-aop/blob/master/LICENSE.txt).
 
-[npm-image]: https://img.shields.io/npm/v/@feizheng/next-aop
-[npm-url]: https://npmjs.org/package/@feizheng/next-aop
+[version-image]: https://img.shields.io/npm/v/@jswork/next-aop
+[version-url]: https://npmjs.org/package/@jswork/next-aop
+
+[license-image]: https://img.shields.io/npm/l/@jswork/next-aop
+[license-url]: https://github.com/afeiship/next-aop/blob/master/LICENSE.txt
+
+[size-image]: https://img.shields.io/bundlephobia/minzip/@jswork/next-aop
+[size-url]: https://github.com/afeiship/next-aop/blob/master/dist/next-aop.min.js
+
+[download-image]: https://img.shields.io/npm/dm/@jswork/next-aop
+[download-url]: https://www.npmjs.com/package/@jswork/next-aop
