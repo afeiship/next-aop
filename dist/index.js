@@ -3,7 +3,7 @@
  * description: Aop for next.
  * homepage: https://github.com/afeiship/next-aop
  * version: 1.0.0
- * date: 2020-11-21 09:15:02
+ * date: 2020-11-21 09:22:14
  * license: MIT
  */
 
